@@ -1,0 +1,84 @@
+http (hypertext transfer protocol).
+http merupakan protokol untuk melakukan transmisi hypermedia document,seperti HTML, JS, CSS, Image, Audio, Video.
+http (web browser,web server)
+http (client,server)
+Client mengirmkan http request untuk meminta atau mengirim informasi ke server.
+Server membalasnya dengan HTTP Response dari HTTP Request yang diterima.
+Client -> HTTP request
+Server -> HTTP responseText
+
+HTTP METHOD
+GET : Melakukan request data. Request menggunakan GET hanya untuk menerima data bukan untuk mengirim data
+HEAD: Sama dengan GET tapi membutukan response body
+POST: Mengirim data bary sehingga biasanya meiliki request body
+PUT : Menggatikan semua data diserver dengan data baru yang dikirim direquest
+DELETE: Menghapus data
+PATCH: Mengubah sebagian data
+OPTIONS: Mendeskripsikan opsi komunitas yang tersedia
+![20230825_101715](https://github.com/belaekaputri/catatanRESTFulAPI/assets/50755376/776e2a00-eefd-48f8-ae74-c5fd2f161497)
+
+DEFAULT PORT 
+http: 80
+https: 443
+
+KODE HTTP RESPONSE
+(200-299) -> SUCCESSFUL RESPONSE
+(300-399) -> REDIRECT
+(400-499) -> CLIENT ERROR 
+(500-599) -> SERVER ERROR
+
+
+HTTP REQUEST(FROM CLIENT)
+HTTP VERB-> GET,POST,PUT,DELETE
+REQUEST PATH-> http://example.com/results
+REQUEST HEADER-> AUTHORIZATION, CONTEN-TYPE, etc  
+REQUEST BODY -> {id:123}
+
+
+HTTP RESPONSE (FROM SERVER)
+STATUS LINE (200 OK), (404 NOT FOUND)
+RESPONSE HEADER -> CONTENT-TYPE, DLL
+RESPONSE BODY -> {id:123}
+<h1>hello world</h1>
+
+REST: Gaya arsitektur ketika membangun web service
+REST request dan response menggunakan json (salah satunya)
+API : Kumpulan tools/protocol dalam membangun aplikasi agar dapt saling berkomunikasi
+
+MACAM2 API : REST, SOAP, GRAPQ, tRPC ?
+
+
+API DOCUMENTANTION
+SWAGGER
+STOPLIGHT
+REDOC
+OPEN API
+
+KESALAHAN MEMBUAT RESTFUL API  
+-Selalu membuat crud api untuk tabel di database(semua)?
+-Membuat response data sama dengan tabel di database
+-Membut API terlebih dahulu, baru mengerjakan WEB
+-Mengembalikan data selengkap-lengkapnya di API
+-Membuat API yang tidak dibutuhkan oleh client
+
+TAHAPAN API
+BUSINESS FLOW -> UI/UX SCREEN -> API DOCUMENTATION -> DEVELOP RESTFUL API
+
+CONTOH PENERAPAN RESTFUL API SHOPPING
+
+PRODUCT DETAIL
+>GET/products/{productId}
+>POST/carts
+
+SHOPPING CART  
+>GET/carts
+>PATCH/carts/products
+>PATCH/carts/products/{productId}
+
+ORDER DETAIL
+>GET/orders/{orderId}
+
+TEKNOLOGI YANG MENDUKUNG RESTFUL API
+0AUTH
+JWT
+OPEN API

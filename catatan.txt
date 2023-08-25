@@ -1,0 +1,38 @@
+API adalah antarmuka yang berupa kumpulan fungsi yang dapat dipanggil atau dijalankan oleh program lain (WPU).
+REST API (respresentasional state transfer) : Gaya perancangan.
+
+JSON
+TIPE DATA PADA JSON
+-boolean
+-array
+-string
+-object
+-number
+-null
+jika lebih dari satu data atau lebih dari satu objek maka gunakan [] atau array kalau tidak maka error
+contoh
+[
+    {
+        "nama":"namdosan",
+        "umur": 17
+    },
+    {
+        "nama": "bobby"
+        "umur": 28
+    }
+]
+jika data hanya ada satu langsung {} contoh
+{
+    "nama":"afka"
+    "umur":27
+}
+
+manipulasi json dengan php
+json_encode() mengubah file array menjadi json
+json_decode() membaca file json lalu diubah menjadi array
+
+
+manipulasi json dengan javascript
+json.stringify()  mengubah objek menjadi json
+json.parse        mengubah json menjadi objek
+
